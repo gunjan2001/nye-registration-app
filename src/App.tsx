@@ -8,7 +8,7 @@ import RegistrantForm from "./components/RegistrantForm";
 const App: React.FC = () => (
   <div className="min-h-screen bg-gray-50">
     <Header />
-    <main className="">
+    <main>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<RegistrantForm />} />

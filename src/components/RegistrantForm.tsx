@@ -95,7 +95,7 @@ const RegistrantForm: React.FC = () => {
     navigate("/list");
   };
 
-  const handleChange = (field: string, value: any) => {
+  const handleChange = (field: string, value: string | number[]) => {
     if (field === "kids") {
       const kidsCount = Number(value);
       setForm((prev) => ({

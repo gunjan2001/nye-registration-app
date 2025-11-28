@@ -18,7 +18,6 @@ const Countdown: React.FC = () => {
   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
   const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
 
-  // bg-[url('./pexels-grizzlybear-399610.jpg')]
   return (
     <div
       className="
@@ -28,9 +27,6 @@ const Countdown: React.FC = () => {
         relative py-2
       "
     >
-      {/* Dark Overlay */}
-      {/* <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div> */}
-
       {/* Content */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}

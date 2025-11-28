@@ -3,7 +3,6 @@ import Countdown from "../components/Countdown";
 
 const Home: React.FC = () => (
   <div>
-    {/* Left - Countdown */}
     <Countdown />
   </div>
 );
