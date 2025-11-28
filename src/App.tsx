@@ -15,9 +15,6 @@ const App: React.FC = () => (
         <Route path="/list" element={<RegistrantList />} />
       </Routes>
     </main>
-    <footer className="text-center text-black text-md my-5">
-      © {new Date().getFullYear()} New Year Celebration. All Rights Reserved.
-    </footer>
   </div>
 );
 
