@@ -1,73 +1,117 @@
-# React + TypeScript + Vite
+# 🎉 New Year’s Eve Registration App – README
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
 
-Currently, two official plugins are available:
+This is a **React + TypeScript + Tailwind CSS** application for managing New Year’s Eve party registrations.
+It includes:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Modern animated **home page**
+* Stylish **registration form**
+* Firework-themed background
+* **Registrant list** with delete confirmation modal
+* Redux-powered data storage
+* Responsive design
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Features
 
-## Expanding the ESLint configuration
+### ✅ Home Page
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* Gradient party-themed background
+* Animated countdown
+* Event details + CTA button
+* Firework effects
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 📝 Registration Form
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* Floating labels
+* Inline error handling
+* Blurred background UI
+* Image preview and upload
+* Auto-reset on successful submission
+* Redirects to registrant list page
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 📄 Registrant List
+
+* Card-style UI
+* Delete button per card
+* Smooth modal popup
+* Empty-state card with animation
+
+---
+
+## 🛠️ Tech Stack
+
+* **React 18**
+* **React Router DOM**
+* **Redux Toolkit**
+* **Framer Motion**
+* **Tailwind CSS**
+* **TypeScript**
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+ ├── components/
+ │    ├── Navbar.tsx
+ │    ├── Countdown.tsx
+ │    ├── RegistrantForm.tsx
+ │    ├── Modal.tsx
+ │    ├── FireworksBackground.tsx
+ │
+ ├── pages/
+ │    ├── Home.tsx
+ │    ├── Register.tsx
+ │    ├── List.tsx
+ │
+ ├── redux/
+ │    ├── registrantSlice.ts
+ │    ├── store.ts
+ │
+ ├── App.tsx
+ ├── main.tsx
+ ├── index.css
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📦 Installation & Setup
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1️⃣ Clone Repository
+
+If you already created a remote repo (see next section), clone it:
+
+```sh
+git clone https://github.com/<your-username>/<repo-name>.git
+cd <repo-name>
 ```
+
+---
+
+### 2️⃣ Install Dependencies
+
+```sh
+npm install
+```
+
+---
+
+### 3️⃣ Start Development Server
+
+```sh
+npm run dev
+```
+
+---
+
+### 4️⃣ Build for Production
+
+```sh
+npm run build
+```
+
+---
